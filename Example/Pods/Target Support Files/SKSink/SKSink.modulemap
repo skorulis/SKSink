@@ -1,0 +1,6 @@
+framework module SKSink {
+  umbrella header "SKSink-umbrella.h"
+
+  export *
+  module * { export * }
+}

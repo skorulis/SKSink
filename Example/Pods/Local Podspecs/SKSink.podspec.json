@@ -1,0 +1,25 @@
+{
+  "name": "SKSink",
+  "version": "0.1.0",
+  "summary": "A short description of SKSink.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SKSink",
+  "license": "MIT",
+  "authors": {
+    "Alexander Skorulis": "skorulis@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SKSink.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SKSink": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

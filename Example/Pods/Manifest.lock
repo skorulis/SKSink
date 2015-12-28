@@ -1,0 +1,14 @@
+PODS:
+  - SKSink (0.1.0)
+
+DEPENDENCIES:
+  - SKSink (from `../`)
+
+EXTERNAL SOURCES:
+  SKSink:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SKSink: e2e9d0a8872ac9496fdc7e3b313b3ea682fd1c2b
+
+COCOAPODS: 0.39.0
