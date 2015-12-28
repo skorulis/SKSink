@@ -1,25 +1,31 @@
 {
   "name": "SKSink",
   "version": "0.1.0",
-  "summary": "A short description of SKSink.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SKSink",
+  "summary": "A kitchen sink of classes that I find useful",
+  "description": "A kitchen sink of classes that I find useful. Not recommended for use by others",
+  "homepage": "https://github.com/skorulis/SKSink",
   "license": "MIT",
   "authors": {
     "Alexander Skorulis": "skorulis@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SKSink.git",
+    "git": "https://github.com/skorulis/SKSink.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/skorulis",
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "source_files": "SKSink/**/*",
   "resource_bundles": {
     "SKSink": [
       "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "TwistedOakCollapsingFutures": [
+      "~> 1.0"
     ]
   }
 }

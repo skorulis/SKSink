@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '15DDB1A71512A1FC48FAC184'
+               BlueprintIdentifier = 'B09F1EA85541EC23EFC1AB8E'
                BlueprintName = 'SKSink'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SKSink.framework'>

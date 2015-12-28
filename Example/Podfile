@@ -1,8 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
+target 'SKSink' do
+    pod 'TwistedOakCollapsingFutures'
+end
 
-target 'SKSink_Tests', :exclusive => true do
+target 'SKSinkTests', :exclusive => true do
   pod "SKSink", :path => "../"
 
   
