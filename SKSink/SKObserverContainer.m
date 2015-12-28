@@ -89,7 +89,10 @@
 }
 
 - (BOOL)conformsToProtocol:(Protocol *)protocol {
-    return protocol_isEqual(protocol, _protocol);
+    if (protocol_isEqual(protocol, _protocol)) {
+        return YES;
+    }
+    return [super conformsToProtocol:protocol];
 }
 
 - (BOOL)respondsToSelector:(SEL)aSelector {

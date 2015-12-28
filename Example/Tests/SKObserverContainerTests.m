@@ -43,6 +43,7 @@
 - (void)testObserverCounts {
     SKObserverContainer *container = [[SKObserverContainer alloc] init:@protocol(TestProtocol)];
     XCTAssertEqual(container.allObservers.count,0);
+    XCTAssertGreaterThan([container description].length, 0);
     @autoreleasepool {
         TestImplementation1 *t1 = [[TestImplementation1 alloc] init];
         [container addObserver:t1];
@@ -54,6 +55,24 @@
     
     XCTAssertEqual(container.allObservers.count,0);
     XCTAssertEqual([container observersRespondingTo:@selector(method1)].count, 0);
+    
+    TestImplementation2 *t2 = [[TestImplementation2 alloc] init];
+    [container addObserver:t2];
+    XCTAssertEqual([container observersRespondingTo:@selector(method2)].count, 1);
+    [container removeObserver:t2];
+    XCTAssertEqual([container observersRespondingTo:@selector(method2)].count, 0);
+}
+
+- (void)testConformance {
+    SKObserverContainer *container = [[SKObserverContainer alloc] init:@protocol(TestProtocol)];
+    XCTAssertTrue([container respondsToSelector:@selector(method2)]);
+    XCTAssertTrue([container respondsToSelector:@selector(method1)]);
+    XCTAssertTrue([container respondsToSelector:@selector(description)]);
+    XCTAssertFalse([container respondsToSelector:@selector(method2Count)]);
+    
+    XCTAssertTrue([container conformsToProtocol:@protocol(TestProtocol)]);
+    XCTAssertTrue([container conformsToProtocol:@protocol(NSObject)]);
+    XCTAssertFalse([container conformsToProtocol:@protocol(NSCacheDelegate)]);
 }
 
 - (void)testCalls {
