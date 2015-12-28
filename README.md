@@ -5,9 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/SKSink.svg?style=flat)](http://cocoapods.org/pods/SKSink)
 [![Platform](https://img.shields.io/cocoapods/p/SKSink.svg?style=flat)](http://cocoapods.org/pods/SKSink)
 
-## Usage
+## Components
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+SKObserverContainer
+-------------------
+
+This container makes it easy to set up observers for a single protocol. Use this when you want a delegate like pattern with multiple delegates.
+
+
 
 ## Requirements
 
