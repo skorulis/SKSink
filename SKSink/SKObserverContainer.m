@@ -54,7 +54,7 @@
     NSMutableSet* ret = [[NSMutableSet alloc] init];
     for(id obj in _observers) {
         if(![[NSNull null] isEqual:obj]) {
-            [ret addObject:ret];
+            [ret addObject:obj];
         }
     }
     return ret;
@@ -65,9 +65,8 @@
 }
 
 - (NSSet*)observersRespondingTo:(SEL)selector {
-    NSSet* all = [self allObservers];
-    NSMutableSet* ret = [NSMutableSet new];
-    for(NSObject* o in all) {
+    NSMutableSet* ret = [[NSMutableSet alloc] init];
+    for(NSObject* o in _observers) {
         if([o respondsToSelector:selector]) {
             [ret addObject:o];
         }
