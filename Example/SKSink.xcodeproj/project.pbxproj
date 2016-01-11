@@ -34,6 +34,8 @@
 		FAE62EBC1C437AAB00E6821C /* SKBaseDBO.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EBA1C437AAB00E6821C /* SKBaseDBO.m */; };
 		FAE62EBF1C437B7B00E6821C /* SKDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EBD1C437B7B00E6821C /* SKDatabase.h */; };
 		FAE62EC01C437B7B00E6821C /* SKDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EBE1C437B7B00E6821C /* SKDatabase.m */; };
+		FAE62F391C438E3700E6821C /* SKQueueDeadlockDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62F371C438E3700E6821C /* SKQueueDeadlockDetector.h */; };
+		FAE62F3A1C438E3700E6821C /* SKQueueDeadlockDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62F381C438E3700E6821C /* SKQueueDeadlockDetector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		FAE62EBA1C437AAB00E6821C /* SKBaseDBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBaseDBO.m; sourceTree = "<group>"; };
 		FAE62EBD1C437B7B00E6821C /* SKDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDatabase.h; sourceTree = "<group>"; };
 		FAE62EBE1C437B7B00E6821C /* SKDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDatabase.m; sourceTree = "<group>"; };
+		FAE62F371C438E3700E6821C /* SKQueueDeadlockDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKQueueDeadlockDetector.h; sourceTree = "<group>"; };
+		FAE62F381C438E3700E6821C /* SKQueueDeadlockDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKQueueDeadlockDetector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,8 @@
 				FA6DA4C31C30D2CB005B0B2C /* SKServiceInjector.m */,
 				FA6DA4BC1C30BE0C005B0B2C /* SKObserverContainer.h */,
 				FA6DA4BD1C30BE0C005B0B2C /* SKObserverContainer.m */,
+				FAE62F371C438E3700E6821C /* SKQueueDeadlockDetector.h */,
+				FAE62F381C438E3700E6821C /* SKQueueDeadlockDetector.m */,
 			);
 			name = SKSink;
 			path = ../../SKSink;
@@ -259,6 +265,7 @@
 				FAE62EAA1C43781000E6821C /* FMResultSetWrapper.h in Headers */,
 				FAE62EBB1C437AAB00E6821C /* SKBaseDBO.h in Headers */,
 				FAE62EB01C43781000E6821C /* SKSQLStatement.h in Headers */,
+				FAE62F391C438E3700E6821C /* SKQueueDeadlockDetector.h in Headers */,
 				FA6DA4C61C30D2CB005B0B2C /* SKServiceInjector.h in Headers */,
 				FAE62E7C1C435A3000E6821C /* NSArray+SKFunctional.h in Headers */,
 				FAE62EB21C43781000E6821C /* SKSQLTypes.h in Headers */,
@@ -461,6 +468,7 @@
 				FAE62EAB1C43781000E6821C /* FMResultSetWrapper.m in Sources */,
 				FAE62EBC1C437AAB00E6821C /* SKBaseDBO.m in Sources */,
 				FA6DA4C71C30D2CB005B0B2C /* SKServiceInjector.m in Sources */,
+				FAE62F3A1C438E3700E6821C /* SKQueueDeadlockDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
