@@ -3,7 +3,7 @@
 
 @import Foundation;
 
-@interface SQLStatement : NSObject
+@interface SKSQLStatement : NSObject
 
 @property (nonatomic, copy) NSString* fields;
 @property (nonatomic, copy) NSString* from;

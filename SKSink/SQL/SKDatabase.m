@@ -1,19 +1,19 @@
 //  Created by Alexander Skorulis on 2/05/2015.
 //  Copyright (c) 2015 com.skorulis. All rights reserved.
 
-#import "PixusDatabase.h"
-#import "BaseTableDBO.h"
+#import "SKDatabase.h"
+#import "SKBaseDBO.h"
 #import "NSArray+SKFunctional.h"
 
-@interface PixusDatabase ()
+@interface SKDatabase ()
 
 @property (nonatomic) NSTimeInterval queryWarnTime;
 
 @end
 
-@implementation PixusDatabase
+@implementation SKDatabase
 
-- (instancetype) initWithFMDB:(FMDatabase*)fmdb idManager:(SQLIdManager*)idManager debugLog:(BOOL)debugLog {
+- (instancetype) initWithFMDB:(FMDatabase*)fmdb idManager:(SKSQLIdManager*)idManager debugLog:(BOOL)debugLog {
     self = [super init];
     _debugLog = debugLog;
     _fmdb = fmdb;
@@ -22,35 +22,35 @@
     return self;
 }
 
-- (FMResultSet*) executeQuery:(SQLStatement*)statement {
+- (FMResultSet*) executeQuery:(SKSQLStatement*)statement {
     return [_fmdb executeQuery:statement.selectSql];
 }
 
-- (NSArray*) readObjects:(SQLStatement *)statement {
+- (NSArray*) readObjects:(SKSQLStatement *)statement {
     return [self readObjects:statement argsDict:statement.args];
 }
 
-- (NSArray*) readObjects:(SQLStatement *)statement argsDict:(NSDictionary*)argsDic {
+- (NSArray*) readObjects:(SKSQLStatement *)statement argsDict:(NSDictionary*)argsDic {
     FMResultSet* resultSet = [self executeSQLQuery:statement.selectSql args:argsDic];
     return [self readResultSet:resultSet statement:statement resultClass:statement.resultClass];
 }
 
-- (NSArray*) readObjects:(SQLStatement *)statement args:(NSArray*)args {
+- (NSArray*) readObjects:(SKSQLStatement *)statement args:(NSArray*)args {
     NSParameterAssert(statement.resultClass != nil);
     return [self readObjects:statement args:args resultClass:statement.resultClass];
 }
 
-- (NSArray*) readObjects:(SQLStatement *)statement args:(NSArray*)args resultClass:(Class)resultClass {
+- (NSArray*) readObjects:(SKSQLStatement *)statement args:(NSArray*)args resultClass:(Class)resultClass {
     FMResultSet* resultSet = [self executeSQLQuery:statement.selectSql args:args];
     return [self readResultSet:resultSet statement:statement resultClass:resultClass];
 }
 
-- (NSDictionary*) readMap:(SQLStatement*)statement keyFunc:(id (^)(id obj))block {
+- (NSDictionary*) readMap:(SKSQLStatement*)statement keyFunc:(id (^)(id obj))block {
     NSArray* items = [self readObjects:statement];
     return [items sk_groupBySingle:block];
 }
 
-- (NSArray*) readResultSet:(FMResultSet*)resultSet statement:(SQLStatement*)statement resultClass:(Class)resultClass {
+- (NSArray*) readResultSet:(FMResultSet*)resultSet statement:(SKSQLStatement*)statement resultClass:(Class)resultClass {
     NSTimeInterval start = [NSDate date].timeIntervalSince1970;
     if(!resultSet) {
         NSError* error = [_fmdb lastError];
@@ -60,7 +60,7 @@
     FMResultSetWrapper* resultWrapper = [[FMResultSetWrapper alloc] initWithResultSet:resultSet];
     NSMutableArray* ret = [[NSMutableArray alloc] init];
     while([resultWrapper nextRow]) {
-        BaseTableDBO* obj = [resultClass alloc];
+        SKBaseDBO* obj = [resultClass alloc];
         obj = [obj initWithRow:resultWrapper];
         [ret addObject:obj];
     }
@@ -73,13 +73,13 @@
     return ret;
 }
 
-- (id) readSingle:(SQLStatement *)statement args:(NSArray*)args resultClass:(Class)resultClass {
+- (id) readSingle:(SKSQLStatement *)statement args:(NSArray*)args resultClass:(Class)resultClass {
     NSArray* all = [self readObjects:statement args:args resultClass:resultClass];
     NSParameterAssert(all.count <= 1);
     return all.firstObject;
 }
 
-- (id) readSingle:(SQLStatement *)statement {
+- (id) readSingle:(SKSQLStatement *)statement {
     NSArray* all = [self readObjects:statement];
     NSParameterAssert(all.count <= 1);
     return all.firstObject;
@@ -98,21 +98,21 @@
     return results;
 }
 
-- (int) count:(SQLStatement*)statement {
+- (int) count:(SKSQLStatement*)statement {
     return [self count:statement argsDict:statement.args];
 }
 
-- (int) count:(SQLStatement *)statement args:(NSArray*)args {
+- (int) count:(SKSQLStatement *)statement args:(NSArray*)args {
     FMResultSet* resultSet = [_fmdb executeQuery:statement.countSql withArgumentsInArray:args];
     return [self getCount:resultSet statement:statement];
 }
 
-- (int) count:(SQLStatement *)statement argsDict:(NSDictionary*)argsDict {
+- (int) count:(SKSQLStatement *)statement argsDict:(NSDictionary*)argsDict {
     FMResultSet* resultSet = [self executeSQLQuery:statement.countSql args:argsDict];
     return [self getCount:resultSet statement:statement];
 }
 
-- (int) getCount:(FMResultSet*)resultSet statement:(SQLStatement*)statement {
+- (int) getCount:(FMResultSet*)resultSet statement:(SKSQLStatement*)statement {
     if(!resultSet) {
         NSError* error = [_fmdb lastError];
         NSLog(@"Error performing query %@",error);
@@ -129,7 +129,7 @@
     return value;
 }
 
-- (BOOL) executeUpdate:(SQLStatement*)statement args:(NSArray*)args {
+- (BOOL) executeUpdate:(SKSQLStatement*)statement args:(NSArray*)args {
     return [_fmdb executeUpdate:statement.updateSql withArgumentsInArray:args];
 }
 
@@ -138,12 +138,12 @@
     [_fmdb executeUpdate:sql withArgumentsInArray:@[@(dbId)]];
 }
 
-- (void) deleteObject:(BaseTableDBO*)dbo {
+- (void) deleteObject:(SKBaseDBO*)dbo {
     NSString* tableName = [dbo.class performSelector:@selector(tableName)];
     [self deleteObject:dbo.dbId table:tableName];
 }
 
-- (void) executeDelete:(SQLStatement*)statement {
+- (void) executeDelete:(SKSQLStatement*)statement {
     NSString* sql = statement.deleteSql;
     [_fmdb executeUpdate:sql withParameterDictionary:statement.args];
 }

@@ -1,18 +1,18 @@
 //  Created by Alexander Skorulis on 2/05/2015.
 //  Copyright (c) 2015 com.skorulis. All rights reserved.
 
-#import "BaseTableDBO.h"
+#import "SKBaseDBO.h"
 #import "sqlite3.h"
 
-@implementation BaseTableDBO
+@implementation SKBaseDBO
 
 - (instancetype) initWithRow:(FMResultSetWrapper*)row {
     self = [super init];
     return self;
 }
 
-+ (BaseTableDBO*) dboWithRow:(FMResultSetWrapper*)row {
-    BaseTableDBO* dbo = [[self class] alloc];
++ (SKBaseDBO*) dboWithRow:(FMResultSetWrapper*)row {
+    SKBaseDBO* dbo = [[self class] alloc];
     return [dbo initWithRow:row];
 }
 
@@ -21,14 +21,14 @@
     return nil;
 }
 
-+ (DBOIdType) nextRowId:(PixusDatabase*)db {
++ (DBOIdType) nextRowId:(SKDatabase*)db {
     sqlite_int64 dbId = [db.idManager nextId:[self tableName]];
     return (DBOIdType)dbId;
 }
 
-+ (void) insert:(BaseTableDBO*)dbo table:(NSString*)table db:(PixusDatabase*)db {
++ (void) insert:(SKBaseDBO*)dbo table:(NSString*)table db:(SKDatabase*)db {
     NSArray* values = dbo.createValues;
-    NSString* valueParams = [SQLStatement queryParamsString:values.count];
+    NSString* valueParams = [SKSQLStatement queryParamsString:values.count];
     
     NSString* sql = [NSString stringWithFormat:@"INSERT INTO %@ VALUES %@",table,valueParams];
     //NSLog(@"SQL %@",sql);
@@ -40,37 +40,37 @@
     return @"ERROR";
 }
 
-+ (instancetype) findById:(DBOIdType)dbId db:(PixusDatabase*)db {
++ (instancetype) findById:(DBOIdType)dbId db:(SKDatabase*)db {
     if(dbId == 0) {
         return nil;
     }
-    SQLStatement* statement = [self baseStatement];
+    SKSQLStatement* statement = [self baseStatement];
     statement.where = @"id = ?";
     return [db readSingle:statement args:@[@(dbId)] resultClass:[self class]];
 }
 
-+ (NSArray*) findWithIds:(NSArray*)ids db:(PixusDatabase*)db {
++ (NSArray*) findWithIds:(NSArray*)ids db:(SKDatabase*)db {
     return [self findWithField:@"id" inValues:ids db:db];
 }
 
-+ (NSArray*) findWithField:(NSString*)field inValues:(NSArray*)values db:(PixusDatabase*)db {
-    SQLStatement* statement = [self statementWithField:field inValues:values];
++ (NSArray*) findWithField:(NSString*)field inValues:(NSArray*)values db:(SKDatabase*)db {
+    SKSQLStatement* statement = [self statementWithField:field inValues:values];
     return [db readObjects:statement args:values resultClass:[self class]];
 }
 
-+ (SQLStatement*) statementWithField:(NSString*)field inValues:(NSArray*)values {
-    SQLStatement* statement = [self baseStatement];
-    statement.where = [NSString stringWithFormat:@"%@ IN %@",field, [SQLStatement queryParamsString:values.count]];
++ (SKSQLStatement*) statementWithField:(NSString*)field inValues:(NSArray*)values {
+    SKSQLStatement* statement = [self baseStatement];
+    statement.where = [NSString stringWithFormat:@"%@ IN %@",field, [SKSQLStatement queryParamsString:values.count]];
     return statement;
 }
 
-+ (NSArray*) findAll:(PixusDatabase*)db {
-    SQLStatement* statement = [self baseStatement];
++ (NSArray*) findAll:(SKDatabase*)db {
+    SKSQLStatement* statement = [self baseStatement];
     return [db readObjects:statement args:nil resultClass:[self class]];
 }
 
-+ (SQLStatement*) baseStatement {
-    SQLStatement* statement = [[SQLStatement alloc] init];
++ (SKSQLStatement*) baseStatement {
+    SKSQLStatement* statement = [[SKSQLStatement alloc] init];
     statement.fields = @"*";
     statement.from = [self tableName];
     statement.resultClass = [self class];

@@ -1,15 +1,15 @@
 //  Created by Alexander Skorulis on 2/05/2015.
 //  Copyright (c) 2015 com.skorulis. All rights reserved.
 
-#import "SQLIdManager.h"
+#import "SKSQLIdManager.h"
 
-@interface SQLIdManager ()
+@interface SKSQLIdManager ()
 
 @property (nonatomic, readonly) NSMutableDictionary* idMap;
 
 @end
 
-@implementation SQLIdManager
+@implementation SKSQLIdManager
 
 - (instancetype) initWithDB:(FMDatabase*)db tables:(NSArray*)tables {
     self = [super init];

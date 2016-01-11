@@ -1,12 +1,12 @@
 //  Created by Alexander Skorulis on 3/05/2015.
 //  Copyright (c) 2015 com.skorulis. All rights reserved.
 
-#import "SQLStatement.h"
-#import "BaseTableDBO.h"
+#import "SKSQLStatement.h"
+#import "SKBaseDBO.h"
 
 static NSString* const kRegexString = @":.+?\\b";
 
-@implementation SQLStatement
+@implementation SKSQLStatement
 
 - (instancetype) init {
     self = [super init];
@@ -103,18 +103,18 @@ static NSString* const kRegexString = @":.+?\\b";
     if(count == 0) {
         return;
     }
-    NSString* filter = [NSString stringWithFormat:@"%@ IN %@",field,[SQLStatement queryParamsString:count]];
+    NSString* filter = [NSString stringWithFormat:@"%@ IN %@",field,[SKSQLStatement queryParamsString:count]];
     [self appendWherePart:filter];
 }
 
 - (void) appendFilledInClause:(NSString*)field ids:(NSArray*)ids {
-    NSString* params = [SQLStatement filledParamsString:ids];
+    NSString* params = [SKSQLStatement filledParamsString:ids];
     NSString* filter = [NSString stringWithFormat:@"%@ IN %@",field,params];
     [self appendWherePart:filter];
 }
 
 - (void) replaceInClause:(NSArray*)ids {
-    NSString* params = [SQLStatement filledParamsString:ids];
+    NSString* params = [SKSQLStatement filledParamsString:ids];
     _where = [_where stringByReplacingOccurrencesOfString:@"???" withString:params];
 }
 
@@ -144,8 +144,8 @@ static NSString* const kRegexString = @":.+?\\b";
 
 - (void) addValue:(id)value forParam:(NSString*)param {
     NSAssert([[self namedParameters] containsObject:param],@"No parameter called %@",param);
-    if([value isKindOfClass:[BaseTableDBO class]]) {
-        BaseTableDBO* dbo = value;
+    if([value isKindOfClass:[SKBaseDBO class]]) {
+        SKBaseDBO* dbo = value;
         self.args[param] = @([dbo dbId]);
     } else {
         self.args[param] = value;

@@ -4,12 +4,12 @@
 #import "SKObserverContainer.h"
 #import "SKServiceActor.h"
 #import "SKServiceInjector.h"
-#import "BaseTableDBO.h"
+#import "SKBaseDBO.h"
 #import "FMResultSetWrapper.h"
-#import "PixusDatabase.h"
-#import "SQLIdManager.h"
-#import "SQLStatement.h"
-#import "SQLTypes.h"
+#import "SKDatabase.h"
+#import "SKSQLIdManager.h"
+#import "SKSQLStatement.h"
+#import "SKSQLTypes.h"
 
 FOUNDATION_EXPORT double SKSinkVersionNumber;
 FOUNDATION_EXPORT const unsigned char SKSinkVersionString[];

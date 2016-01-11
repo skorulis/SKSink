@@ -12,7 +12,6 @@
 		0D619A711F71058C9238B17E9AF48AFC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BAF1B3D6596FF8B35025A5FCC8BDDF /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		0E3AC11F4DB608A1529A949D83F0E974 /* TOCFuture+MoreContinuations.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EBE871F962D7814E92E8FCAC34FFC /* TOCFuture+MoreContinuations.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		10C1677E0A6B8CBC9E43E07A32AD3F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D277E2694F44EE3079AF5F3E6064C5DD /* Foundation.framework */; };
-		13B949F67AD6EBFB94B9995C8EF7A7FA /* SQLStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5B2980E864AAFBACABC5D39D0CC886 /* SQLStatement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		159DE0890B1201A1AD6D339ECC2D3679 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D277E2694F44EE3079AF5F3E6064C5DD /* Foundation.framework */; };
 		16222115630DFDF11882F02D7AE6772B /* TOCInternal_Array+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 61484C16F1B49E764BF73FDA04770AC4 /* TOCInternal_Array+Functional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		183A0D8AF38E0EE20E47F1FEF9B37327 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 188638C661D4D9466141645A325D471A /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,19 +29,16 @@
 		3DF82B1BF6369B42027E529A5C56B32F /* TOCTypeDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = F01155FA2160D8729AE950094923EC01 /* TOCTypeDefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3ECC23FFAE400A6B2658AAF2990D83BE /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = CE958093B46DAA99534380DCE9751362 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F61BE79D4B46C119C136EDE960CE78C /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = E5CCECB099E1D62A824F0E8A74351F4B /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F7F5B8CFC7A99DFB0669B4846992886 /* SQLStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = C509603DF39BFC4FDFD2DCA5BCFFA394 /* SQLStatement.m */; };
-		413C70DA6EEF3B91D6E2E78461B065E3 /* PixusDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BA59D792F076CA5FA80BA202AC1E5 /* PixusDatabase.m */; };
+		413C70DA6EEF3B91D6E2E78461B065E3 /* SKDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BA59D792F076CA5FA80BA202AC1E5 /* SKDatabase.m */; };
 		4449D397387843CE217BB9EB5F2D36DE /* NSArray+SKFunctional.m in Sources */ = {isa = PBXBuildFile; fileRef = C39C1EF64A88BB2EA1997F8C0F45F706 /* NSArray+SKFunctional.m */; };
 		4C3924D2708F53C09A71045108494688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D277E2694F44EE3079AF5F3E6064C5DD /* Foundation.framework */; };
 		4C84C46E094E3B1736796C4AEBCB8B07 /* UnionFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8EFB779C61CCAE42A50D6C402D818F /* UnionFind.framework */; };
 		4D444717C796C10419545DC3E9F1DA83 /* TOCCancelToken+MoreConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1288605DAF67EE0CA2458723A69258AF /* TOCCancelToken+MoreConstructors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5190DE28EE5EB277D50EE7BDC1F38ECA /* SKSink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4913FEFC9D7C0F8BC848361854461620 /* SKSink-dummy.m */; };
-		67BA99C9878518B46C55D26D985139A8 /* SQLIdManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B2CCAD95F191AFB5D730A1770C74ACD /* SQLIdManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6969527E392AE4858CFA02D6CCEC8F56 /* SKObserverContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 180D7D37A0D27DA1A30CA367DC982D05 /* SKObserverContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C63E2BEBE2BC08BD46F6A91D0A08143 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FDD3CB45267119E341542F7DE48B83 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EDE95050E597053F3D85604AF0CC0B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D277E2694F44EE3079AF5F3E6064C5DD /* Foundation.framework */; };
 		6F9AFE0479B57203A7AE63C410C8651B /* TOCTimeout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B8B610A054933171653353AC05C9C /* TOCTimeout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7178C1056586075BE1D9A00DF23847F9 /* SQLTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5962CE5E780B665D6ECFAF26172F29D3 /* SQLTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72B154F9B0269FF31FB8F7B1296EC0CE /* TOCCancelTokenAndSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E1620BDC3E5F9FA8CC4734E28C75EC /* TOCCancelTokenAndSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74695802583BDB0C0818AC1B97F63815 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B48A322F4F7FC97D49FE70F5BD060A01 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75BF603C60AA11DBAA1EDBBBD107F817 /* Pods-SKSink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7052F6E6971765F3B89128A59168622 /* Pods-SKSink-dummy.m */; };
@@ -52,7 +48,6 @@
 		84E9F7F008AAA599306ADA6ABF2FFC00 /* FMResultSetWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4991EF4ED6FBEEA5D88D49318E20CC84 /* FMResultSetWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		883F2428A319A397EEBB50C9555624ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D277E2694F44EE3079AF5F3E6064C5DD /* Foundation.framework */; };
 		89FC294E378175AAC5DBFC27ECE01863 /* UFDisjointSetNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A124A76987E4755C9B800B1DC26427C /* UFDisjointSetNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FEF45CC61440D74356DDC7C89420F72 /* BaseTableDBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F4DAFA6E095124BF68564CDF2E6D6 /* BaseTableDBO.m */; };
 		9268A419981C66A8F2606FE5B2ECAEFA /* TOCInternal_BlockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2CF47E09F635382BD7B94EA68BEEC4 /* TOCInternal_BlockObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96BB1B4D445020F7A17B20AA1B107664 /* SKServiceInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A189DFA4C66B7E78F211C953A0C1FE3 /* SKServiceInjector.m */; };
 		97FE75A9D6E0700D848D76FC8607CEC5 /* TOCInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3124FF176123BDF45301F83BA16A36 /* TOCInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,25 +64,30 @@
 		C4E79EC03F6E2D5EDDDE845A2B892F14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D277E2694F44EE3079AF5F3E6064C5DD /* Foundation.framework */; };
 		C5E680F703F82E2D77FE6F46B4AC9944 /* TwistedOakCollapsingFutures-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DADA1F28BA3C8674BAD12218C27FDA5 /* TwistedOakCollapsingFutures-dummy.m */; };
 		C8FC0929A42C36174794FE1ADFD620E3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4A319E585ABFE2C2D45857D5DE243A /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CB3A944F80A08E64BA7BBB297EB1EAD0 /* SQLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F545704754C0AEF988C21FDC5E19A6 /* SQLTypes.m */; };
 		D145CA49AAC8A039A5BCCE1B89B9B01D /* TOCCancelToken+MoreConstructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 264286E129035B024693F465821697F8 /* TOCCancelToken+MoreConstructors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3225608D89DF02BDDF1A43AA8FEA9F6 /* Pods-SKSink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C942F1CE1240E3B68BB3ADE33D8BB987 /* Pods-SKSink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D57AEECEFCC2087A83F3973FDDBFC7A3 /* PixusDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DBD9232F27B44214A1C37699E4068B /* PixusDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D57AEECEFCC2087A83F3973FDDBFC7A3 /* SKDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DBD9232F27B44214A1C37699E4068B /* SKDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D948156E4B13723013FD0DCBF1B19584 /* TOCInternal_Racer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9262ABB5667D8791407B3D35C651B1 /* TOCInternal_Racer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE5923D45EEFBC6248514499F624EF95 /* TOCFuture+MoreContinuations.h in Headers */ = {isa = PBXBuildFile; fileRef = 51DBE94618C3685CF11E8985F61CF45C /* TOCFuture+MoreContinuations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E330886E0E7C450E9669C4BD025D9ABD /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 089C85AAF9FBD6099B80AF1B20DB8DB7 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E516FF4340A56C430B41B5958B240ECE /* SKSink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FBF46721B32167B42206E6C03A3C720C /* SKSink.bundle */; };
 		E76F6B77FD39D63A4FDC4B9DA65FF1D9 /* TOCTimeout.h in Headers */ = {isa = PBXBuildFile; fileRef = E40723BA051EF1439A6875C3C954EE0E /* TOCTimeout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB24ABAE58C26136DBEF4229FD1CAF7A /* TOCFuture+MoreContructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E209F6DF1796BB9FEFAF4DC1183463 /* TOCFuture+MoreContructors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EBD26D4AB3D32A3A88C0AA432339EC08 /* BaseTableDBO.h in Headers */ = {isa = PBXBuildFile; fileRef = A93FE72201F265873230BCDB30E3058E /* BaseTableDBO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF001A19B85D1638BD48BAE519BFA801 /* UnionFind-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C069CD6B84C83439331EE259C09976 /* UnionFind-dummy.m */; };
 		EFC7AD6120454C0F0C0F8BF5A62B7D7C /* NSArray+SKFunctional.h in Headers */ = {isa = PBXBuildFile; fileRef = FE17513869E38577506AF9C67DAB005E /* NSArray+SKFunctional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0895B2A83F948153E1E5EA38A230B66 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D050AD1F5AFADD2FCE98E9A5370D6A3 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F336FDDE8FDC5DFB1CC8AE4A940ABFCD /* TOCFutureAndSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B38BBE14AF9588FB432893BDD78D0E /* TOCFutureAndSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F55AA1757815F94B7697D57060703FD5 /* SQLIdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B91363C3F71BCA7D4AC16861B95BA9 /* SQLIdManager.m */; };
 		F5A0569CB70F6F37A16E32EE210D0C66 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC70031F43F8A340E444C03151AA4C /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F5CDB1D3E2FEC2745EFB29C53D7F28BE /* TwistedOakCollapsingFutures-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F79EE1165E916B076DE4EA5D2E0FC454 /* TwistedOakCollapsingFutures-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA6436B3C7A09794095D59DADBF4FDA0 /* TOCInternal_BlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 13842AE39156E66E6A50CE09454F370D /* TOCInternal_BlockObject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAE62EB61C437A5100E6821C /* SKSQLStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EB41C437A5100E6821C /* SKSQLStatement.h */; };
+		FAE62EB81C437A6A00E6821C /* SKSQLStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EB51C437A5100E6821C /* SKSQLStatement.m */; };
+		FAE62EC31C437BC300E6821C /* SKBaseDBO.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EC11C437BC300E6821C /* SKBaseDBO.h */; };
+		FAE62EC51C437C0900E6821C /* SKBaseDBO.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EC21C437BC300E6821C /* SKBaseDBO.m */; };
+		FAE62EC81C437D0600E6821C /* SKSQLTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EC61C437D0600E6821C /* SKSQLTypes.h */; };
+		FAE62EC91C437D0600E6821C /* SKSQLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EC71C437D0600E6821C /* SKSQLTypes.m */; };
+		FAE62ECC1C437D4B00E6821C /* SKSQLIdManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62ECA1C437D4B00E6821C /* SKSQLIdManager.h */; };
+		FAE62ECD1C437D4B00E6821C /* SKSQLIdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62ECB1C437D4B00E6821C /* SKSQLIdManager.m */; };
 		FD75AA2F8D534AC1E8E15EFB4014148A /* UnionFind-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9FFA1833B701877DB9D3171C3F9804 /* UnionFind-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -177,7 +177,6 @@
 		04A7559EC8B100C143CCB61E33DF190B /* Pods-SKSinkTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SKSinkTests-frameworks.sh"; sourceTree = "<group>"; };
 		05A8A032ED22FA173301874C44A78A27 /* SKSink.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SKSink.modulemap; sourceTree = "<group>"; };
 		06E7A2672EBE13035EDDC866763F8DDA /* FMResultSetWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FMResultSetWrapper.m; sourceTree = "<group>"; };
-		07B91363C3F71BCA7D4AC16861B95BA9 /* SQLIdManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SQLIdManager.m; sourceTree = "<group>"; };
 		089C85AAF9FBD6099B80AF1B20DB8DB7 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
 		0A189DFA4C66B7E78F211C953A0C1FE3 /* SKServiceInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKServiceInjector.m; sourceTree = "<group>"; };
 		0A4B9BB3DDE307FB81701536B5047733 /* SKServiceActor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKServiceActor.h; sourceTree = "<group>"; };
@@ -197,12 +196,11 @@
 		2C895B6DA02CC1EB348FF56C655D9A34 /* Pods-SKSinkTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SKSinkTests-dummy.m"; sourceTree = "<group>"; };
 		2CEA170577798EB1A0072A91C778B149 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DBBC6DB6FB7981A4F4B07C65E82FB8C /* SKSink.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKSink.xcconfig; sourceTree = "<group>"; };
-		30F545704754C0AEF988C21FDC5E19A6 /* SQLTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SQLTypes.m; sourceTree = "<group>"; };
 		33B38BBE14AF9588FB432893BDD78D0E /* TOCFutureAndSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCFutureAndSource.m; path = src/TOCFutureAndSource.m; sourceTree = "<group>"; };
 		34BBD147DA892054F82271D392C65AC2 /* UFDisjointSetNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UFDisjointSetNode.m; path = src/UFDisjointSetNode.m; sourceTree = "<group>"; };
 		3593574ECBA98C6A0C70C2818C22519B /* TwistedOakCollapsingFutures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TwistedOakCollapsingFutures.h; path = src/TwistedOakCollapsingFutures.h; sourceTree = "<group>"; };
 		36A85551897D22DDF72E492C3ECA3D59 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
-		36DBD9232F27B44214A1C37699E4068B /* PixusDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PixusDatabase.h; sourceTree = "<group>"; };
+		36DBD9232F27B44214A1C37699E4068B /* SKDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKDatabase.h; sourceTree = "<group>"; };
 		3818075FEF727D0E1309A76A2C4E464D /* Pods-SKSink-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SKSink-acknowledgements.plist"; sourceTree = "<group>"; };
 		3D1E7A556EB01C0C10D659D6F0C20027 /* TwistedOakCollapsingFutures-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TwistedOakCollapsingFutures-prefix.pch"; sourceTree = "<group>"; };
 		3DADA1F28BA3C8674BAD12218C27FDA5 /* TwistedOakCollapsingFutures-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TwistedOakCollapsingFutures-dummy.m"; sourceTree = "<group>"; };
@@ -211,17 +209,14 @@
 		4991EF4ED6FBEEA5D88D49318E20CC84 /* FMResultSetWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FMResultSetWrapper.h; sourceTree = "<group>"; };
 		4C385CC80631D9669ECAFDA58A290A7E /* SKServiceInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKServiceInjector.h; sourceTree = "<group>"; };
 		4C5DF5FFF94A6C0E36BFBC2445152B1E /* SKSink-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKSink-prefix.pch"; sourceTree = "<group>"; };
-		4E4F4DAFA6E095124BF68564CDF2E6D6 /* BaseTableDBO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseTableDBO.m; sourceTree = "<group>"; };
 		4E9262ABB5667D8791407B3D35C651B1 /* TOCInternal_Racer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCInternal_Racer.h; path = src/internal/TOCInternal_Racer.h; sourceTree = "<group>"; };
-		4F5B2980E864AAFBACABC5D39D0CC886 /* SQLStatement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SQLStatement.h; sourceTree = "<group>"; };
-		4F6BA59D792F076CA5FA80BA202AC1E5 /* PixusDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PixusDatabase.m; sourceTree = "<group>"; };
+		4F6BA59D792F076CA5FA80BA202AC1E5 /* SKDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKDatabase.m; sourceTree = "<group>"; };
 		4F77AE51E07A25AF39FC3778292B29BB /* TOCFutureAndSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCFutureAndSource.h; path = src/TOCFutureAndSource.h; sourceTree = "<group>"; };
 		5006D474929FBA4A65BC2D50B708E588 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50DDB08F168157FFB01F8DA043BDCFF0 /* TOCFuture+MoreContructors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TOCFuture+MoreContructors.h"; path = "src/TOCFuture+MoreContructors.h"; sourceTree = "<group>"; };
 		51DBE94618C3685CF11E8985F61CF45C /* TOCFuture+MoreContinuations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TOCFuture+MoreContinuations.h"; path = "src/TOCFuture+MoreContinuations.h"; sourceTree = "<group>"; };
 		55C069CD6B84C83439331EE259C09976 /* UnionFind-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UnionFind-dummy.m"; sourceTree = "<group>"; };
 		5936EC3ADEF2BCB9D49C69C8DBD21C33 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5962CE5E780B665D6ECFAF26172F29D3 /* SQLTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SQLTypes.h; sourceTree = "<group>"; };
 		5B3124FF176123BDF45301F83BA16A36 /* TOCInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCInternal.h; path = src/internal/TOCInternal.h; sourceTree = "<group>"; };
 		5C3B8B610A054933171653353AC05C9C /* TOCTimeout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCTimeout.m; path = src/TOCTimeout.m; sourceTree = "<group>"; };
 		5FED370BA33543384D8448F77146566A /* TOCInternal_OnDeallocObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCInternal_OnDeallocObject.h; path = src/internal/TOCInternal_OnDeallocObject.h; sourceTree = "<group>"; };
@@ -229,7 +224,6 @@
 		647B2946DAC657A9DD9FEA8A9658E64C /* TOCCancelTokenAndSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCCancelTokenAndSource.m; path = src/TOCCancelTokenAndSource.m; sourceTree = "<group>"; };
 		64BAF1B3D6596FF8B35025A5FCC8BDDF /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
 		68DE339257C2C9E4DD37193240527B9D /* TwistedOakCollapsingFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwistedOakCollapsingFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B2CCAD95F191AFB5D730A1770C74ACD /* SQLIdManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SQLIdManager.h; sourceTree = "<group>"; };
 		748D720A88E8ABC9F330869141371F9E /* TwistedOakCollapsingFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwistedOakCollapsingFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F430897CC72F252006E94B59BA1B7 /* Pods-SKSinkTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SKSinkTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7BBD6AA8E98366102E8A08A1A3E59BDB /* Pods-SKSink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKSink.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,7 +242,6 @@
 		A3B2A1DD1EF33416E864C828ECE9C941 /* Pods-SKSinkTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SKSinkTests-umbrella.h"; sourceTree = "<group>"; };
 		A56510F02F8F9970A0865117D027A681 /* Pods-SKSink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKSink.debug.xcconfig"; sourceTree = "<group>"; };
 		A6CFA3C2BD2A818867D801108AB82618 /* CollapsingFutures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CollapsingFutures.h; path = src/CollapsingFutures.h; sourceTree = "<group>"; };
-		A93FE72201F265873230BCDB30E3058E /* BaseTableDBO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseTableDBO.h; sourceTree = "<group>"; };
 		AAC978E393443AD7D743C70BDB996333 /* UnionFind.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UnionFind.xcconfig; sourceTree = "<group>"; };
 		ABA988261F385333E257A196A303BD16 /* TwistedOakCollapsingFutures.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwistedOakCollapsingFutures.xcconfig; sourceTree = "<group>"; };
 		B29F4B2C3245390A3E5A06CF24384694 /* SKServiceActor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKServiceActor.m; sourceTree = "<group>"; };
@@ -261,7 +254,6 @@
 		C0890F4D2C212A9688FB791047F5AFAF /* Pods-SKSinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKSinkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C38688677DD77EE001DE246F11A47EF3 /* TOCInternal_Array+Functional.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TOCInternal_Array+Functional.m"; path = "src/internal/TOCInternal_Array+Functional.m"; sourceTree = "<group>"; };
 		C39C1EF64A88BB2EA1997F8C0F45F706 /* NSArray+SKFunctional.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SKFunctional.m"; sourceTree = "<group>"; };
-		C509603DF39BFC4FDFD2DCA5BCFFA394 /* SQLStatement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SQLStatement.m; sourceTree = "<group>"; };
 		C942F1CE1240E3B68BB3ADE33D8BB987 /* Pods-SKSink-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SKSink-umbrella.h"; sourceTree = "<group>"; };
 		CE958093B46DAA99534380DCE9751362 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
 		D12D268C2AB0860B521DB710FDB0A03D /* UnionFind.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UnionFind.modulemap; sourceTree = "<group>"; };
@@ -283,6 +275,14 @@
 		F79EE1165E916B076DE4EA5D2E0FC454 /* TwistedOakCollapsingFutures-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TwistedOakCollapsingFutures-umbrella.h"; sourceTree = "<group>"; };
 		FA1EBE871F962D7814E92E8FCAC34FFC /* TOCFuture+MoreContinuations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TOCFuture+MoreContinuations.m"; path = "src/TOCFuture+MoreContinuations.m"; sourceTree = "<group>"; };
 		FA95CAC81E0BAC3695863EEB0399DD1E /* Pods_SKSink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKSink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE62EB41C437A5100E6821C /* SKSQLStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSQLStatement.h; sourceTree = "<group>"; };
+		FAE62EB51C437A5100E6821C /* SKSQLStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSQLStatement.m; sourceTree = "<group>"; };
+		FAE62EC11C437BC300E6821C /* SKBaseDBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBaseDBO.h; sourceTree = "<group>"; };
+		FAE62EC21C437BC300E6821C /* SKBaseDBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBaseDBO.m; sourceTree = "<group>"; };
+		FAE62EC61C437D0600E6821C /* SKSQLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSQLTypes.h; sourceTree = "<group>"; };
+		FAE62EC71C437D0600E6821C /* SKSQLTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSQLTypes.m; sourceTree = "<group>"; };
+		FAE62ECA1C437D4B00E6821C /* SKSQLIdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSQLIdManager.h; sourceTree = "<group>"; };
+		FAE62ECB1C437D4B00E6821C /* SKSQLIdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSQLIdManager.m; sourceTree = "<group>"; };
 		FBC6B6AECBB58CE44123C0E2E3CF5DEE /* SKSink-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKSink-umbrella.h"; sourceTree = "<group>"; };
 		FBF46721B32167B42206E6C03A3C720C /* SKSink.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKSink.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE17513869E38577506AF9C67DAB005E /* NSArray+SKFunctional.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+SKFunctional.h"; sourceTree = "<group>"; };
@@ -572,18 +572,18 @@
 		9A414425875EF1A7C053035C3BE3C3F9 /* SQL */ = {
 			isa = PBXGroup;
 			children = (
-				A93FE72201F265873230BCDB30E3058E /* BaseTableDBO.h */,
-				4E4F4DAFA6E095124BF68564CDF2E6D6 /* BaseTableDBO.m */,
+				FAE62ECA1C437D4B00E6821C /* SKSQLIdManager.h */,
+				FAE62ECB1C437D4B00E6821C /* SKSQLIdManager.m */,
+				FAE62EC61C437D0600E6821C /* SKSQLTypes.h */,
+				FAE62EC71C437D0600E6821C /* SKSQLTypes.m */,
+				FAE62EC11C437BC300E6821C /* SKBaseDBO.h */,
+				FAE62EC21C437BC300E6821C /* SKBaseDBO.m */,
+				FAE62EB41C437A5100E6821C /* SKSQLStatement.h */,
+				FAE62EB51C437A5100E6821C /* SKSQLStatement.m */,
 				4991EF4ED6FBEEA5D88D49318E20CC84 /* FMResultSetWrapper.h */,
 				06E7A2672EBE13035EDDC866763F8DDA /* FMResultSetWrapper.m */,
-				36DBD9232F27B44214A1C37699E4068B /* PixusDatabase.h */,
-				4F6BA59D792F076CA5FA80BA202AC1E5 /* PixusDatabase.m */,
-				6B2CCAD95F191AFB5D730A1770C74ACD /* SQLIdManager.h */,
-				07B91363C3F71BCA7D4AC16861B95BA9 /* SQLIdManager.m */,
-				4F5B2980E864AAFBACABC5D39D0CC886 /* SQLStatement.h */,
-				C509603DF39BFC4FDFD2DCA5BCFFA394 /* SQLStatement.m */,
-				5962CE5E780B665D6ECFAF26172F29D3 /* SQLTypes.h */,
-				30F545704754C0AEF988C21FDC5E19A6 /* SQLTypes.m */,
+				36DBD9232F27B44214A1C37699E4068B /* SKDatabase.h */,
+				4F6BA59D792F076CA5FA80BA202AC1E5 /* SKDatabase.m */,
 			);
 			path = SQL;
 			sourceTree = "<group>";
@@ -640,17 +640,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD26D4AB3D32A3A88C0AA432339EC08 /* BaseTableDBO.h in Headers */,
 				84E9F7F008AAA599306ADA6ABF2FFC00 /* FMResultSetWrapper.h in Headers */,
 				EFC7AD6120454C0F0C0F8BF5A62B7D7C /* NSArray+SKFunctional.h in Headers */,
-				D57AEECEFCC2087A83F3973FDDBFC7A3 /* PixusDatabase.h in Headers */,
+				D57AEECEFCC2087A83F3973FDDBFC7A3 /* SKDatabase.h in Headers */,
+				FAE62EC81C437D0600E6821C /* SKSQLTypes.h in Headers */,
 				6969527E392AE4858CFA02D6CCEC8F56 /* SKObserverContainer.h in Headers */,
 				3195A8A7E400EAD0E1929E521230990F /* SKServiceActor.h in Headers */,
 				2F8473DFBCC010A83BACB5B4D75B7A89 /* SKServiceInjector.h in Headers */,
 				A94A97CA4F1A92470582A9CA9104ADDE /* SKSink-umbrella.h in Headers */,
-				67BA99C9878518B46C55D26D985139A8 /* SQLIdManager.h in Headers */,
-				13B949F67AD6EBFB94B9995C8EF7A7FA /* SQLStatement.h in Headers */,
-				7178C1056586075BE1D9A00DF23847F9 /* SQLTypes.h in Headers */,
+				FAE62ECC1C437D4B00E6821C /* SKSQLIdManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,7 +688,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE62EC31C437BC300E6821C /* SKBaseDBO.h in Headers */,
 				D3225608D89DF02BDDF1A43AA8FEA9F6 /* Pods-SKSink-umbrella.h in Headers */,
+				FAE62EB61C437A5100E6821C /* SKSQLStatement.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,17 +947,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FEF45CC61440D74356DDC7C89420F72 /* BaseTableDBO.m in Sources */,
+				FAE62EB81C437A6A00E6821C /* SKSQLStatement.m in Sources */,
+				FAE62ECD1C437D4B00E6821C /* SKSQLIdManager.m in Sources */,
 				830E9BDAECE28915A137203ECE7B2A1E /* FMResultSetWrapper.m in Sources */,
 				4449D397387843CE217BB9EB5F2D36DE /* NSArray+SKFunctional.m in Sources */,
-				413C70DA6EEF3B91D6E2E78461B065E3 /* PixusDatabase.m in Sources */,
+				413C70DA6EEF3B91D6E2E78461B065E3 /* SKDatabase.m in Sources */,
 				2C371570A7C4334F007B307958539EA2 /* SKObserverContainer.m in Sources */,
 				9A4EBBC955438496F74B74096BB44501 /* SKServiceActor.m in Sources */,
+				FAE62EC51C437C0900E6821C /* SKBaseDBO.m in Sources */,
 				96BB1B4D445020F7A17B20AA1B107664 /* SKServiceInjector.m in Sources */,
 				5190DE28EE5EB277D50EE7BDC1F38ECA /* SKSink-dummy.m in Sources */,
-				F55AA1757815F94B7697D57060703FD5 /* SQLIdManager.m in Sources */,
-				3F7F5B8CFC7A99DFB0669B4846992886 /* SQLStatement.m in Sources */,
-				CB3A944F80A08E64BA7BBB297EB1EAD0 /* SQLTypes.m in Sources */,
+				FAE62EC91C437D0600E6821C /* SKSQLTypes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,7 +3,7 @@
 
 #import <FMDB/FMDB.h>
 
-@interface SQLIdManager : NSObject
+@interface SKSQLIdManager : NSObject
 
 - (instancetype) initWithDB:(FMDatabase*)db tables:(NSArray*)tables;
 
