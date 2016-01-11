@@ -56,7 +56,7 @@
         NSError* error = [_fmdb lastError];
         NSLog(@"Error performing query %@",error);
     }
-    NSAssert(resultSet,@"No results for query %@",statement.selectSql);
+    NSAssert(resultSet,@"No results for query %@ params: %@",statement.selectSql,statement.args);
     FMResultSetWrapper* resultWrapper = [[FMResultSetWrapper alloc] initWithResultSet:resultSet];
     NSMutableArray* ret = [[NSMutableArray alloc] init];
     while([resultWrapper nextRow]) {

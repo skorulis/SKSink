@@ -60,7 +60,7 @@
 
 + (SKSQLStatement*) statementWithField:(NSString*)field inValues:(NSArray*)values {
     SKSQLStatement* statement = [self baseStatement];
-    statement.where = [NSString stringWithFormat:@"%@ IN %@",field, [SKSQLStatement queryParamsString:values.count]];
+    [statement appendFilledInClause:field ids:values];
     return statement;
 }
 
