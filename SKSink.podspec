@@ -38,4 +38,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'SKSink/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 	s.dependency 'TwistedOakCollapsingFutures', '~> 1.0'
+	s.dependency 'FMDB'
 end

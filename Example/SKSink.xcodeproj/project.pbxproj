@@ -13,15 +13,27 @@
 		FA6DA4AD1C3018E9005B0B2C /* SKSink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6DA4A31C3018E8005B0B2C /* SKSink.framework */; };
 		FA6DA4B21C3018E9005B0B2C /* SKSinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6DA4B11C3018E9005B0B2C /* SKSinkTests.m */; };
 		FA6DA4BA1C30BD95005B0B2C /* SKObserverContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA33876B1C300F6B0044D953 /* SKObserverContainerTests.m */; };
-		FA6DA4BE1C30BE0C005B0B2C /* SKObserverContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6DA4BC1C30BE0C005B0B2C /* SKObserverContainer.h */; };
+		FA6DA4BE1C30BE0C005B0B2C /* SKObserverContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6DA4BC1C30BE0C005B0B2C /* SKObserverContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA6DA4BF1C30BE0C005B0B2C /* SKObserverContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6DA4BD1C30BE0C005B0B2C /* SKObserverContainer.m */; };
-		FA6DA4C41C30D2CB005B0B2C /* SKServiceActor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6DA4C01C30D2CB005B0B2C /* SKServiceActor.h */; };
+		FA6DA4C41C30D2CB005B0B2C /* SKServiceActor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6DA4C01C30D2CB005B0B2C /* SKServiceActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA6DA4C51C30D2CB005B0B2C /* SKServiceActor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6DA4C11C30D2CB005B0B2C /* SKServiceActor.m */; };
-		FA6DA4C61C30D2CB005B0B2C /* SKServiceInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6DA4C21C30D2CB005B0B2C /* SKServiceInjector.h */; };
+		FA6DA4C61C30D2CB005B0B2C /* SKServiceInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6DA4C21C30D2CB005B0B2C /* SKServiceInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA6DA4C71C30D2CB005B0B2C /* SKServiceInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6DA4C31C30D2CB005B0B2C /* SKServiceInjector.m */; };
 		FADFEC311C30F90F0088C8FA /* SKServiceInjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADFEC301C30F90F0088C8FA /* SKServiceInjectorTests.m */; };
-		FAE62E7C1C435A3000E6821C /* NSArray+SKFunctional.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62E7A1C435A3000E6821C /* NSArray+SKFunctional.h */; };
+		FAE62E7C1C435A3000E6821C /* NSArray+SKFunctional.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62E7A1C435A3000E6821C /* NSArray+SKFunctional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAE62E7D1C435A3000E6821C /* NSArray+SKFunctional.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62E7B1C435A3000E6821C /* NSArray+SKFunctional.m */; };
+		FAE62EA81C43781000E6821C /* BaseTableDBO.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62E9C1C43781000E6821C /* BaseTableDBO.h */; };
+		FAE62EA91C43781000E6821C /* BaseTableDBO.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62E9D1C43781000E6821C /* BaseTableDBO.m */; };
+		FAE62EAA1C43781000E6821C /* FMResultSetWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62E9E1C43781000E6821C /* FMResultSetWrapper.h */; };
+		FAE62EAB1C43781000E6821C /* FMResultSetWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62E9F1C43781000E6821C /* FMResultSetWrapper.m */; };
+		FAE62EAC1C43781000E6821C /* PixusDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EA01C43781000E6821C /* PixusDatabase.h */; };
+		FAE62EAD1C43781000E6821C /* PixusDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EA11C43781000E6821C /* PixusDatabase.m */; };
+		FAE62EAE1C43781000E6821C /* SQLIdManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EA21C43781000E6821C /* SQLIdManager.h */; };
+		FAE62EAF1C43781000E6821C /* SQLIdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EA31C43781000E6821C /* SQLIdManager.m */; };
+		FAE62EB01C43781000E6821C /* SQLStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EA41C43781000E6821C /* SQLStatement.h */; };
+		FAE62EB11C43781000E6821C /* SQLStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EA51C43781000E6821C /* SQLStatement.m */; };
+		FAE62EB21C43781000E6821C /* SQLTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EA61C43781000E6821C /* SQLTypes.h */; };
+		FAE62EB31C43781000E6821C /* SQLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EA71C43781000E6821C /* SQLTypes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +80,19 @@
 		FADFEC301C30F90F0088C8FA /* SKServiceInjectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKServiceInjectorTests.m; sourceTree = "<group>"; };
 		FAE62E7A1C435A3000E6821C /* NSArray+SKFunctional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SKFunctional.h"; sourceTree = "<group>"; };
 		FAE62E7B1C435A3000E6821C /* NSArray+SKFunctional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SKFunctional.m"; sourceTree = "<group>"; };
+		FAE62E991C43763C00E6821C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FAE62E9C1C43781000E6821C /* BaseTableDBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableDBO.h; sourceTree = "<group>"; };
+		FAE62E9D1C43781000E6821C /* BaseTableDBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableDBO.m; sourceTree = "<group>"; };
+		FAE62E9E1C43781000E6821C /* FMResultSetWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSetWrapper.h; sourceTree = "<group>"; };
+		FAE62E9F1C43781000E6821C /* FMResultSetWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSetWrapper.m; sourceTree = "<group>"; };
+		FAE62EA01C43781000E6821C /* PixusDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixusDatabase.h; sourceTree = "<group>"; };
+		FAE62EA11C43781000E6821C /* PixusDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PixusDatabase.m; sourceTree = "<group>"; };
+		FAE62EA21C43781000E6821C /* SQLIdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLIdManager.h; sourceTree = "<group>"; };
+		FAE62EA31C43781000E6821C /* SQLIdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLIdManager.m; sourceTree = "<group>"; };
+		FAE62EA41C43781000E6821C /* SQLStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLStatement.h; sourceTree = "<group>"; };
+		FAE62EA51C43781000E6821C /* SQLStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLStatement.m; sourceTree = "<group>"; };
+		FAE62EA61C43781000E6821C /* SQLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLTypes.h; sourceTree = "<group>"; };
+		FAE62EA71C43781000E6821C /* SQLTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLTypes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +152,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAE62E991C43763C00E6821C /* libsqlite3.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -190,6 +216,7 @@
 		FA6DA4BB1C30BE0C005B0B2C /* SKSink */ = {
 			isa = PBXGroup;
 			children = (
+				FAE62E9B1C43781000E6821C /* SQL */,
 				FAE62E7A1C435A3000E6821C /* NSArray+SKFunctional.h */,
 				FAE62E7B1C435A3000E6821C /* NSArray+SKFunctional.m */,
 				FA6DA4C01C30D2CB005B0B2C /* SKServiceActor.h */,
@@ -203,6 +230,25 @@
 			path = ../../SKSink;
 			sourceTree = "<group>";
 		};
+		FAE62E9B1C43781000E6821C /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				FAE62E9C1C43781000E6821C /* BaseTableDBO.h */,
+				FAE62E9D1C43781000E6821C /* BaseTableDBO.m */,
+				FAE62E9E1C43781000E6821C /* FMResultSetWrapper.h */,
+				FAE62E9F1C43781000E6821C /* FMResultSetWrapper.m */,
+				FAE62EA01C43781000E6821C /* PixusDatabase.h */,
+				FAE62EA11C43781000E6821C /* PixusDatabase.m */,
+				FAE62EA21C43781000E6821C /* SQLIdManager.h */,
+				FAE62EA31C43781000E6821C /* SQLIdManager.m */,
+				FAE62EA41C43781000E6821C /* SQLStatement.h */,
+				FAE62EA51C43781000E6821C /* SQLStatement.m */,
+				FAE62EA61C43781000E6821C /* SQLTypes.h */,
+				FAE62EA71C43781000E6821C /* SQLTypes.m */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -210,11 +256,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE62EAA1C43781000E6821C /* FMResultSetWrapper.h in Headers */,
+				FAE62EB01C43781000E6821C /* SQLStatement.h in Headers */,
+				FAE62EA81C43781000E6821C /* BaseTableDBO.h in Headers */,
 				FA6DA4C61C30D2CB005B0B2C /* SKServiceInjector.h in Headers */,
+				FAE62EAC1C43781000E6821C /* PixusDatabase.h in Headers */,
 				FAE62E7C1C435A3000E6821C /* NSArray+SKFunctional.h in Headers */,
+				FAE62EB21C43781000E6821C /* SQLTypes.h in Headers */,
 				FA6DA4BE1C30BE0C005B0B2C /* SKObserverContainer.h in Headers */,
 				FA6DA4C41C30D2CB005B0B2C /* SKServiceActor.h in Headers */,
 				FA6DA4A61C3018E8005B0B2C /* SKSink.h in Headers */,
+				FAE62EAE1C43781000E6821C /* SQLIdManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,8 +452,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6DA4BF1C30BE0C005B0B2C /* SKObserverContainer.m in Sources */,
+				FAE62EB11C43781000E6821C /* SQLStatement.m in Sources */,
+				FAE62EB31C43781000E6821C /* SQLTypes.m in Sources */,
+				FAE62EAF1C43781000E6821C /* SQLIdManager.m in Sources */,
 				FAE62E7D1C435A3000E6821C /* NSArray+SKFunctional.m in Sources */,
 				FA6DA4C51C30D2CB005B0B2C /* SKServiceActor.m in Sources */,
+				FAE62EA91C43781000E6821C /* BaseTableDBO.m in Sources */,
+				FAE62EAB1C43781000E6821C /* FMResultSetWrapper.m in Sources */,
+				FAE62EAD1C43781000E6821C /* PixusDatabase.m in Sources */,
 				FA6DA4C71C30D2CB005B0B2C /* SKServiceInjector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

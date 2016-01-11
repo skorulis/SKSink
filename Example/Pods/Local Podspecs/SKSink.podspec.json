@@ -26,6 +26,9 @@
   "dependencies": {
     "TwistedOakCollapsingFutures": [
       "~> 1.0"
+    ],
+    "FMDB": [
+
     ]
   }
 }

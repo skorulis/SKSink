@@ -1,11 +1,16 @@
 PODS:
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
   - SKSink (0.1.0):
+    - FMDB
     - TwistedOakCollapsingFutures (~> 1.0)
   - TwistedOakCollapsingFutures (1.0.0):
     - UnionFind (~> 1.0)
   - UnionFind (1.0.1)
 
 DEPENDENCIES:
+  - FMDB
   - SKSink (from `../`)
   - TwistedOakCollapsingFutures
 
@@ -14,7 +19,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SKSink: 51da15a985e76dbdb39b60a741638e448925649f
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  SKSink: f2020b5d1a4c91d440ca8fe0d26a733b3eb1f346
   TwistedOakCollapsingFutures: f359b90f203e9ab13dfb92c9ff41842a7fe1cd0c
   UnionFind: c33be5adb12983981d6e827ea94fc7f9e370f52d
 
