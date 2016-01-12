@@ -90,6 +90,8 @@
 		FAE62ECD1C437D4B00E6821C /* SKSQLIdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62ECB1C437D4B00E6821C /* SKSQLIdManager.m */; };
 		FAE62F3D1C438E5900E6821C /* SKQueueDeadlockDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62F3B1C438E5900E6821C /* SKQueueDeadlockDetector.h */; };
 		FAE62F3E1C438E5900E6821C /* SKQueueDeadlockDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62F3C1C438E5900E6821C /* SKQueueDeadlockDetector.m */; };
+		FAE62F6D1C45B39300E6821C /* UIViewController+SKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62F6B1C45B39300E6821C /* UIViewController+SKAdditions.h */; };
+		FAE62F6E1C45B39300E6821C /* UIViewController+SKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62F6C1C45B39300E6821C /* UIViewController+SKAdditions.m */; };
 		FD75AA2F8D534AC1E8E15EFB4014148A /* UnionFind-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9FFA1833B701877DB9D3171C3F9804 /* UnionFind-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -287,6 +289,8 @@
 		FAE62ECB1C437D4B00E6821C /* SKSQLIdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSQLIdManager.m; sourceTree = "<group>"; };
 		FAE62F3B1C438E5900E6821C /* SKQueueDeadlockDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKQueueDeadlockDetector.h; sourceTree = "<group>"; };
 		FAE62F3C1C438E5900E6821C /* SKQueueDeadlockDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKQueueDeadlockDetector.m; sourceTree = "<group>"; };
+		FAE62F6B1C45B39300E6821C /* UIViewController+SKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SKAdditions.h"; sourceTree = "<group>"; };
+		FAE62F6C1C45B39300E6821C /* UIViewController+SKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SKAdditions.m"; sourceTree = "<group>"; };
 		FBC6B6AECBB58CE44123C0E2E3CF5DEE /* SKSink-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKSink-umbrella.h"; sourceTree = "<group>"; };
 		FBF46721B32167B42206E6C03A3C720C /* SKSink.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKSink.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE17513869E38577506AF9C67DAB005E /* NSArray+SKFunctional.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+SKFunctional.h"; sourceTree = "<group>"; };
@@ -433,6 +437,7 @@
 		30531AB813A6207017778F1B60D18A59 /* SKSink */ = {
 			isa = PBXGroup;
 			children = (
+				FAE62F6A1C45B39300E6821C /* UIKit */,
 				FAE62F3B1C438E5900E6821C /* SKQueueDeadlockDetector.h */,
 				FAE62F3C1C438E5900E6821C /* SKQueueDeadlockDetector.m */,
 				FE17513869E38577506AF9C67DAB005E /* NSArray+SKFunctional.h */,
@@ -639,6 +644,15 @@
 			path = "../Target Support Files/FMDB";
 			sourceTree = "<group>";
 		};
+		FAE62F6A1C45B39300E6821C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FAE62F6B1C45B39300E6821C /* UIViewController+SKAdditions.h */,
+				FAE62F6C1C45B39300E6821C /* UIViewController+SKAdditions.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -653,6 +667,7 @@
 				6969527E392AE4858CFA02D6CCEC8F56 /* SKObserverContainer.h in Headers */,
 				3195A8A7E400EAD0E1929E521230990F /* SKServiceActor.h in Headers */,
 				2F8473DFBCC010A83BACB5B4D75B7A89 /* SKServiceInjector.h in Headers */,
+				FAE62F6D1C45B39300E6821C /* UIViewController+SKAdditions.h in Headers */,
 				FAE62F3D1C438E5900E6821C /* SKQueueDeadlockDetector.h in Headers */,
 				A94A97CA4F1A92470582A9CA9104ADDE /* SKSink-umbrella.h in Headers */,
 				FAE62ECC1C437D4B00E6821C /* SKSQLIdManager.h in Headers */,
@@ -966,6 +981,7 @@
 				96BB1B4D445020F7A17B20AA1B107664 /* SKServiceInjector.m in Sources */,
 				5190DE28EE5EB277D50EE7BDC1F38ECA /* SKSink-dummy.m in Sources */,
 				FAE62EC91C437D0600E6821C /* SKSQLTypes.m in Sources */,
+				FAE62F6E1C45B39300E6821C /* UIViewController+SKAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

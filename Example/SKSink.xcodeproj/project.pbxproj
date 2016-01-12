@@ -36,6 +36,8 @@
 		FAE62EC01C437B7B00E6821C /* SKDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EBE1C437B7B00E6821C /* SKDatabase.m */; };
 		FAE62F391C438E3700E6821C /* SKQueueDeadlockDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62F371C438E3700E6821C /* SKQueueDeadlockDetector.h */; };
 		FAE62F3A1C438E3700E6821C /* SKQueueDeadlockDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62F381C438E3700E6821C /* SKQueueDeadlockDetector.m */; };
+		FAE62F681C45B31C00E6821C /* UIViewController+SKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62F661C45B31C00E6821C /* UIViewController+SKAdditions.h */; };
+		FAE62F691C45B31C00E6821C /* UIViewController+SKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62F671C45B31C00E6821C /* UIViewController+SKAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		FAE62EBE1C437B7B00E6821C /* SKDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDatabase.m; sourceTree = "<group>"; };
 		FAE62F371C438E3700E6821C /* SKQueueDeadlockDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKQueueDeadlockDetector.h; sourceTree = "<group>"; };
 		FAE62F381C438E3700E6821C /* SKQueueDeadlockDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKQueueDeadlockDetector.m; sourceTree = "<group>"; };
+		FAE62F661C45B31C00E6821C /* UIViewController+SKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SKAdditions.h"; sourceTree = "<group>"; };
+		FAE62F671C45B31C00E6821C /* UIViewController+SKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SKAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,7 @@
 		FA6DA4BB1C30BE0C005B0B2C /* SKSink */ = {
 			isa = PBXGroup;
 			children = (
+				FAE62F651C45B30800E6821C /* UIKit */,
 				FAE62E9B1C43781000E6821C /* SQL */,
 				FAE62E7A1C435A3000E6821C /* NSArray+SKFunctional.h */,
 				FAE62E7B1C435A3000E6821C /* NSArray+SKFunctional.m */,
@@ -255,6 +260,15 @@
 			path = SQL;
 			sourceTree = "<group>";
 		};
+		FAE62F651C45B30800E6821C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FAE62F661C45B31C00E6821C /* UIViewController+SKAdditions.h */,
+				FAE62F671C45B31C00E6821C /* UIViewController+SKAdditions.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -262,6 +276,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE62F681C45B31C00E6821C /* UIViewController+SKAdditions.h in Headers */,
 				FAE62EAA1C43781000E6821C /* FMResultSetWrapper.h in Headers */,
 				FAE62EBB1C437AAB00E6821C /* SKBaseDBO.h in Headers */,
 				FAE62EB01C43781000E6821C /* SKSQLStatement.h in Headers */,
@@ -464,6 +479,7 @@
 				FAE62EB31C43781000E6821C /* SKSQLTypes.m in Sources */,
 				FAE62EAF1C43781000E6821C /* SKSQLIdManager.m in Sources */,
 				FAE62E7D1C435A3000E6821C /* NSArray+SKFunctional.m in Sources */,
+				FAE62F691C45B31C00E6821C /* UIViewController+SKAdditions.m in Sources */,
 				FA6DA4C51C30D2CB005B0B2C /* SKServiceActor.m in Sources */,
 				FAE62EAB1C43781000E6821C /* FMResultSetWrapper.m in Sources */,
 				FAE62EBC1C437AAB00E6821C /* SKBaseDBO.m in Sources */,
