@@ -19,6 +19,8 @@
 		FA6DA4C51C30D2CB005B0B2C /* SKServiceActor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6DA4C11C30D2CB005B0B2C /* SKServiceActor.m */; };
 		FA6DA4C61C30D2CB005B0B2C /* SKServiceInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6DA4C21C30D2CB005B0B2C /* SKServiceInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA6DA4C71C30D2CB005B0B2C /* SKServiceInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6DA4C31C30D2CB005B0B2C /* SKServiceInjector.m */; };
+		FAB09CA61CC644A60014F56F /* SKPathHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB09CA41CC644A60014F56F /* SKPathHelper.h */; };
+		FAB09CA71CC644A60014F56F /* SKPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB09CA51CC644A60014F56F /* SKPathHelper.m */; };
 		FADFEC311C30F90F0088C8FA /* SKServiceInjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADFEC301C30F90F0088C8FA /* SKServiceInjectorTests.m */; };
 		FAE62E7C1C435A3000E6821C /* NSArray+SKFunctional.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62E7A1C435A3000E6821C /* NSArray+SKFunctional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAE62E7D1C435A3000E6821C /* NSArray+SKFunctional.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62E7B1C435A3000E6821C /* NSArray+SKFunctional.m */; };
@@ -81,6 +83,8 @@
 		FA6DA4C11C30D2CB005B0B2C /* SKServiceActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKServiceActor.m; sourceTree = "<group>"; };
 		FA6DA4C21C30D2CB005B0B2C /* SKServiceInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKServiceInjector.h; sourceTree = "<group>"; };
 		FA6DA4C31C30D2CB005B0B2C /* SKServiceInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKServiceInjector.m; sourceTree = "<group>"; };
+		FAB09CA41CC644A60014F56F /* SKPathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPathHelper.h; sourceTree = "<group>"; };
+		FAB09CA51CC644A60014F56F /* SKPathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPathHelper.m; sourceTree = "<group>"; };
 		FADFEC301C30F90F0088C8FA /* SKServiceInjectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKServiceInjectorTests.m; sourceTree = "<group>"; };
 		FAE62E7A1C435A3000E6821C /* NSArray+SKFunctional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SKFunctional.h"; sourceTree = "<group>"; };
 		FAE62E7B1C435A3000E6821C /* NSArray+SKFunctional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SKFunctional.m"; sourceTree = "<group>"; };
@@ -236,6 +240,8 @@
 				FA6DA4BD1C30BE0C005B0B2C /* SKObserverContainer.m */,
 				FAE62F371C438E3700E6821C /* SKQueueDeadlockDetector.h */,
 				FAE62F381C438E3700E6821C /* SKQueueDeadlockDetector.m */,
+				FAB09CA41CC644A60014F56F /* SKPathHelper.h */,
+				FAB09CA51CC644A60014F56F /* SKPathHelper.m */,
 			);
 			name = SKSink;
 			path = ../../SKSink;
@@ -283,6 +289,7 @@
 				FAE62F391C438E3700E6821C /* SKQueueDeadlockDetector.h in Headers */,
 				FA6DA4C61C30D2CB005B0B2C /* SKServiceInjector.h in Headers */,
 				FAE62E7C1C435A3000E6821C /* NSArray+SKFunctional.h in Headers */,
+				FAB09CA61CC644A60014F56F /* SKPathHelper.h in Headers */,
 				FAE62EB21C43781000E6821C /* SKSQLTypes.h in Headers */,
 				FA6DA4BE1C30BE0C005B0B2C /* SKObserverContainer.h in Headers */,
 				FA6DA4C41C30D2CB005B0B2C /* SKServiceActor.h in Headers */,
@@ -475,6 +482,7 @@
 			files = (
 				FA6DA4BF1C30BE0C005B0B2C /* SKObserverContainer.m in Sources */,
 				FAE62EB11C43781000E6821C /* SKSQLStatement.m in Sources */,
+				FAB09CA71CC644A60014F56F /* SKPathHelper.m in Sources */,
 				FAE62EC01C437B7B00E6821C /* SKDatabase.m in Sources */,
 				FAE62EB31C43781000E6821C /* SKSQLTypes.m in Sources */,
 				FAE62EAF1C43781000E6821C /* SKSQLIdManager.m in Sources */,

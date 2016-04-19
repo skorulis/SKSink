@@ -80,6 +80,8 @@
 		F5A0569CB70F6F37A16E32EE210D0C66 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC70031F43F8A340E444C03151AA4C /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F5CDB1D3E2FEC2745EFB29C53D7F28BE /* TwistedOakCollapsingFutures-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F79EE1165E916B076DE4EA5D2E0FC454 /* TwistedOakCollapsingFutures-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA6436B3C7A09794095D59DADBF4FDA0 /* TOCInternal_BlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 13842AE39156E66E6A50CE09454F370D /* TOCInternal_BlockObject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAB09CAA1CC6454C0014F56F /* SKPathHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB09CA81CC6454C0014F56F /* SKPathHelper.h */; };
+		FAB09CAB1CC6454C0014F56F /* SKPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB09CA91CC6454C0014F56F /* SKPathHelper.m */; };
 		FAE62EB61C437A5100E6821C /* SKSQLStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EB41C437A5100E6821C /* SKSQLStatement.h */; };
 		FAE62EB81C437A6A00E6821C /* SKSQLStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE62EB51C437A5100E6821C /* SKSQLStatement.m */; };
 		FAE62EC31C437BC300E6821C /* SKBaseDBO.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE62EC11C437BC300E6821C /* SKBaseDBO.h */; };
@@ -279,6 +281,8 @@
 		F79EE1165E916B076DE4EA5D2E0FC454 /* TwistedOakCollapsingFutures-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TwistedOakCollapsingFutures-umbrella.h"; sourceTree = "<group>"; };
 		FA1EBE871F962D7814E92E8FCAC34FFC /* TOCFuture+MoreContinuations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TOCFuture+MoreContinuations.m"; path = "src/TOCFuture+MoreContinuations.m"; sourceTree = "<group>"; };
 		FA95CAC81E0BAC3695863EEB0399DD1E /* Pods_SKSink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKSink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB09CA81CC6454C0014F56F /* SKPathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPathHelper.h; sourceTree = "<group>"; };
+		FAB09CA91CC6454C0014F56F /* SKPathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPathHelper.m; sourceTree = "<group>"; };
 		FAE62EB41C437A5100E6821C /* SKSQLStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSQLStatement.h; sourceTree = "<group>"; };
 		FAE62EB51C437A5100E6821C /* SKSQLStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSQLStatement.m; sourceTree = "<group>"; };
 		FAE62EC11C437BC300E6821C /* SKBaseDBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBaseDBO.h; sourceTree = "<group>"; };
@@ -448,6 +452,8 @@
 				B29F4B2C3245390A3E5A06CF24384694 /* SKServiceActor.m */,
 				4C385CC80631D9669ECAFDA58A290A7E /* SKServiceInjector.h */,
 				0A189DFA4C66B7E78F211C953A0C1FE3 /* SKServiceInjector.m */,
+				FAB09CA81CC6454C0014F56F /* SKPathHelper.h */,
+				FAB09CA91CC6454C0014F56F /* SKPathHelper.m */,
 				9A414425875EF1A7C053035C3BE3C3F9 /* SQL */,
 			);
 			path = SKSink;
@@ -671,6 +677,7 @@
 				FAE62F3D1C438E5900E6821C /* SKQueueDeadlockDetector.h in Headers */,
 				A94A97CA4F1A92470582A9CA9104ADDE /* SKSink-umbrella.h in Headers */,
 				FAE62ECC1C437D4B00E6821C /* SKSQLIdManager.h in Headers */,
+				FAB09CAA1CC6454C0014F56F /* SKPathHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,6 +980,7 @@
 				FAE62EB81C437A6A00E6821C /* SKSQLStatement.m in Sources */,
 				FAE62ECD1C437D4B00E6821C /* SKSQLIdManager.m in Sources */,
 				830E9BDAECE28915A137203ECE7B2A1E /* FMResultSetWrapper.m in Sources */,
+				FAB09CAB1CC6454C0014F56F /* SKPathHelper.m in Sources */,
 				4449D397387843CE217BB9EB5F2D36DE /* NSArray+SKFunctional.m in Sources */,
 				413C70DA6EEF3B91D6E2E78461B065E3 /* SKDatabase.m in Sources */,
 				2C371570A7C4334F007B307958539EA2 /* SKObserverContainer.m in Sources */,
