@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char SKSinkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <SKSink/PublicHeader.h>
 
 #import <SKSink/SKObserverContainer.h>
+#import <SKSink/SKPathHelper.h>

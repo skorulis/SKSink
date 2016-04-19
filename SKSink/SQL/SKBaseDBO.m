@@ -54,6 +54,9 @@
 }
 
 + (NSArray*) findWithField:(NSString*)field inValues:(NSArray*)values db:(SKDatabase*)db {
+    if (values.count == 0) {
+        return @[];
+    }
     SKSQLStatement* statement = [self statementWithField:field inValues:values];
     return [db readObjects:statement args:values resultClass:[self class]];
 }
